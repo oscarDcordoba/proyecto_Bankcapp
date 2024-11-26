@@ -21,9 +21,9 @@
         <label for="motivo">Motivo (Opcional)</label>
         <input type="text" name="motivo" id="motivo" placeholder="Ingrese el motivo de la transacción">
 
-        <button type="submit">Continuar</button>
+        <button class="btn btn-primary" type="submit">Continuar</button>
         <a href="{{url('admin/menu_cliente/index')}}">
-            <button type="button">Volver</button>
+            <button class="btn btn-primary" type="button">Volver</button>
         </a>
     </form>
 </div>

@@ -33,6 +33,7 @@ class RolesSeeder extends Seeder
         Permission::create(['name' => 'usuarios.edit'])->syncRoles($Admin,$Svisor);
         Permission::create(['name' => 'usuarios.update'])->syncRoles($Admin,$Svisor);
         Permission::create(['name' => 'usuarios.destroy'])->syncRoles($Admin,$Svisor);
+        Permission::create(['name' => 'usuarios.graficas'])->syncRoles($Admin,$Svisor);
 
 
         Permission::create(['name' => 'menu_cliente.index'])->syncRoles($cliente);

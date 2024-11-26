@@ -42,7 +42,7 @@
           </div>
         <form method="GET" action="{{ route('menu_cliente.index') }}">
             @csrf
-            <button type="submit">Volver</button>
+            <button class="btn btn-primary" type="submit">Volver</button>
         </form>
        
 @endsection

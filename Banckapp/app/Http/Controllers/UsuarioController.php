@@ -104,4 +104,9 @@ class UsuarioController extends Controller
             ->with('mensaje','Se eliminó al usuario de la manera correcta')
             ->with('icono','success');
     }
+    public function graficas()
+    {
+        return redirect()->route('usuarios.graficas');
+    }
+   
 }

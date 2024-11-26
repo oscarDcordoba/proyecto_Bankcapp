@@ -23,6 +23,8 @@ Route::get('/admin/usuarios/{id}', [App\Http\Controllers\UsuarioController::clas
 Route::get('/admin/usuarios/{id}/edit', [App\Http\Controllers\UsuarioController::class, 'edit'])->name('usuarios.edit')->middleware('auth','can:usuarios.edit');
 Route::put('/admin/usuarios/{id}', [App\Http\Controllers\UsuarioController::class, 'update'])->name('usuarios.update')->middleware('auth','can:usuarios.update');
 Route::delete('/admin/usuarios/{id}', [App\Http\Controllers\UsuarioController::class, 'destroy'])->name('usuarios.destroy')->middleware('auth','can:usuarios.destroy');
+Route::get('/graficas', [App\Http\Controllers\UsuarioController::class, 'graficas'])->name('usuarios.graficas')->middleware('auth','can:usuarios.graficas');
+
 
 //rutas  menu cliente
 Route::get('admin/menu_cliente/index', [App\Http\Controllers\clientectrl::class, 'index'])->name('menu_cliente.index')->middleware('auth');
